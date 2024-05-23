@@ -7,7 +7,7 @@ describe('Login test', () => {
         await LoginPage.open()
 
         await LoginPage.login('standard_user', 'secret_sauce')
-        await expect(SecurePage.flashAlert).toExist()
+        await expect(SecurePage.invContainerCheck).toExist()
         
     })
 })
